@@ -37,6 +37,7 @@ public class Practice6DrawLineView extends View {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(10);
+        paint.setStyle(Paint.Style.FILL);
 
         int startX = width / 2 - lineWidth / 2;
         int startY = height / 2 - lineHeight / 2;
