@@ -92,10 +92,10 @@ public class Practice10HistogramView extends View {
             left = columnarRect.right;
 
             //4. 画柱状图下的文字
-            int textX = Math.round(columnarRect.left + (columnarRect.right - columnarRect.left) / 2);
             String s = String.valueOf(i);
             Rect boundRect = new Rect();
             mTextPaint.getTextBounds(s, 0, s.length(), boundRect);
+            int textX = Math.round(columnarRect.left + (columnarRect.right - columnarRect.left) / 2) - boundRect.width() / 2;
             int textY = getMeasuredHeight() - bottomMargin + boundRect.height() + UIUtils.dip2Px(getContext(), 2);
             canvas.drawText(s, textX, textY, mTextPaint);
         }
