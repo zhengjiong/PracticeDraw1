@@ -37,7 +37,7 @@ public class Practice6DrawLineView extends View {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.BLACK);
         paint.setStrokeWidth(10);
-        paint.setStyle(Paint.Style.FILL);
+        //paint.setStyle(Paint.Style.FILL);//这里不需要设置style, 对画线是没有作用的, 因为直线不是封闭图形
 
         int startX = width / 2 - lineWidth / 2;
         int startY = height / 2 - lineHeight / 2;
