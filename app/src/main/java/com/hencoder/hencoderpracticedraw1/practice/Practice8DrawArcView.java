@@ -40,7 +40,7 @@ public class Practice8DrawArcView extends View {
         paint.setColor(Color.BLACK);
 
         // 1.绘制不封口的弧形(左上)
-        paint.setStyle(Paint.Style.FILL);//设置会fill, 将会填充图形, 设置为stroke将会变成一条线
+        paint.setStyle(Paint.Style.FILL);//设置为fill, 将会填充图形, 设置为stroke将会变成一条线
         canvas.drawArc(
                 200, 100, 800, 500,
                 180,
@@ -61,7 +61,7 @@ public class Practice8DrawArcView extends View {
 
         // 3.绘制弧形(下方)
         //useCenter 表示是否连接到圆心，如果不连接到圆心，就是弧形，如果连接到圆心，就是扇形。
-        paint.setStyle(Paint.Style.STROKE);//设置会fill, 将会填充图形
+        paint.setStyle(Paint.Style.STROKE);//设置会fill, 将会填充图形, 设置为stroke将会变成一条线
         canvas.drawArc(
                 200, 100, 800, 500,
                 20,

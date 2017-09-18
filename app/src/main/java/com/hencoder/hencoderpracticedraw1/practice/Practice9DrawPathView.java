@@ -39,7 +39,7 @@ public class Practice9DrawPathView extends View {
         /**
          * 这个方法和 Canvas.drawArc() 比起来，少了一个参数 useCenter，而多了一个参数 forceMoveTo 。
          * 少了 useCenter ，是因为 arcTo() 只用来画弧形而不画扇形，所以不再需要 useCenter 参数；
-         * 而多出来的这个 forceMoveTo 参数的意思是，绘制是要「抬一下笔移动过去」，还是「直接拖着笔过去」，区别在于是否留下移动的痕迹。
+         * 而多出来的这个 forceMoveTo 参数的意思是，true:绘制是要「抬一下笔移动过去」，false: 还是「直接拖着笔过去」，区别在于是否留下移动的痕迹。
          */
         path.arcTo(
                 200, 200, 400, 400,
